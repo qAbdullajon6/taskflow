@@ -1,11 +1,20 @@
-import express from 'express'
+import express, { Application } from 'express'
+import dotenv from 'dotenv'
+import cors from 'cors'
+import healthRoure from './routes/health.routes.js'
+import apiRoute from './routes/index.js'
 
-const app = express()
+dotenv.config()
 
-app.get('/', (req, res) => {
-    return res.status(200).json({message: "Hello world"})
-})
+const app: Application = express()
 
-app.listen(3000, ()=> {
-    console.log('Loyiha ishga tushdi')
+app.use(cors())
+app.use(express.json())
+
+app.use('/api', healthRoure)
+app.use('/api', apiRoute)
+
+const PORT = process.env.PORT || 5000
+app.listen(PORT, () => {
+    console.log(`🚀 Server http://localhost:${PORT} portida ishga tushdi`);
 })
