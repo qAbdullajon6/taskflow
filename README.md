@@ -6,7 +6,7 @@
 
 Organize projects. Manage tasks. Work together.
 
-<img src="https://sdmntprdenmarkeast.oaiusercontent.com/files/00000000-36e4-8210-84b3-770876f5fd74/raw?se=2026-10-28T06%3A48%3A19Z&sp=r&sv=2026-02-06&sr=b&scid=0788d155-1eeb-44c5-bbd3-8e86b94bdee7&skoid=82a3371f-2f6c-4f81-8a78-2701b362559b&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-10-28T06%3A21%3A35Z&ske=2026-10-29T06%3A21%3A35Z&sks=b&skv=2026-02-06&sig=P0HR00HcaFjmbj3oz3Gnw5PWJf4LYbcPYniBW7uQMy4%3D" alt="TaskFlow project management platform preview" width="100%" />
+<img src="./packages/readme.png" alt="TaskFlow project management platform preview" width="100%" />
 
 **🚧 Currently in development**
 
