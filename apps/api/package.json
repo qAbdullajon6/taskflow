@@ -5,13 +5,18 @@
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "postinstall": "prisma skills sync || exit 0",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "db:generate": "prisma generate"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@prisma/client": "^5.22.0",
     "cors": "^2.8.6",
     "dotenv": "^18.0.9",
     "express": "^5.3.0"
@@ -20,6 +25,7 @@
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/node": "^26.6.5",
+    "prisma": "^5.22.0",
     "tsx": "^4.23.15",
     "typescript": "^7.0.2"
   }
