@@ -3,9 +3,9 @@ declare global {
     interface ProcessEnv {
       PORT?: string;
       NODE_ENV: 'development' | 'production' | 'test';
-      API_PREFIX: string;
+      DATABASE_URL: string;
     }
   }
 }
 
-export {};
+export { };
